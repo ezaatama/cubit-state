@@ -32,7 +32,7 @@ class _AppButtonState extends State<AppButton> {
         borderRadius: BorderRadius.circular(15),
         color: widget.backgroundColor
       ),
-      child: widget.isIcon == false? AppText(text: widget.text!, color: widget.color) : Center(child: Icon(widget.icon, color: widget.color)),
+      child: widget.isIcon == false? Center(child: AppText(text: widget.text!, color: widget.color)) : Center(child: Icon(widget.icon, color: widget.color)),
     );
   }
 }
